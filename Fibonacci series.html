@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Fibonnaci seies</title>
+
+<script>
+function fibo ()
+{
+var fibl=0, fib2=1, fib=0;
+var n=prompt("Enter a value of n");
+document.write("<h2>Fibonacci series is:</h2>");
+document.write("<h2>"+fibl+"\n<\h2>");
+document.write("<h2>"+fib2+"\n<\h2>");
+for (i=3;i<=n;i++) {
+fib=fibl+fib2;
+fibl=fib2;
+fib2=fib;
+document.write("<h2>"+fib+"\n<\h2>");
+}
+}
+</script>
+</head>
+
+<body onload=fibo()>
+
+<center>
+<h1>Fibonnaci Series</h1></center>
+</body>
+</html>
